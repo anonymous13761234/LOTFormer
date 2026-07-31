@@ -1,0 +1,14 @@
+MODEL:
+  TYPE: lot_swin
+  NAME: lot_swin_tiny_patch4_224
+  DROP_PATH_RATE: 0.2
+  SWIN:
+    EMBED_DIM: 96
+    DEPTHS: [ 2, 2, 6, 2 ]
+    NUM_HEADS: [ 3, 6, 12, 24 ]
+    WINDOW_SIZE: 56
+  LA:
+    ATTN_TYPE: LLSS
+    num_refs: 32
+    sink_eps: 1.0
+    sink_max_iter: 5

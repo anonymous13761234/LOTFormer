@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Experiment outputs / data
+runs/
+output/
+outputs/
+wandb/
+*.log
+*.pth
+*.pt
+*.ckpt
+data/imagenet/
+
+# local analysis/figure scripts (figure PNG is published, scripts are not)
+retrieval/attention_error_analysis.py
+retrieval/make_error_figure.py
+retrieval/error_analysis_aggregate.py
+retrieval/head_layer_errors.json
+retrieval/realistic_analysis.py
+retrieval/realistic_errors.json
